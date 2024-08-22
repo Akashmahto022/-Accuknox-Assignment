@@ -90,9 +90,13 @@ const widgetSlice = createSlice({
         )
       );
     },
+
+    addNewCategoryWidget: (state, action)=>{
+      state.categories.push(action.payload)
+    }
   },
 });
 
-export const { addWidget, searchAnyWidget, deleteWidget } = widgetSlice.actions;
+export const { addWidget, searchAnyWidget, deleteWidget, addNewCategoryWidget } = widgetSlice.actions;
 export default widgetSlice.reducer;
 

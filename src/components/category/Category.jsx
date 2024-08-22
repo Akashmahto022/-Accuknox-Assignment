@@ -19,7 +19,7 @@ const Category = ({ category }) => {
         ))}
 
         <button className="w-[400px] h-[200px] rounded-lg p-2 bg-white mt-2 mb-4 " onClick={handleToggel}>
-          <span className="py-1 px-1 bg-white rounded-lg border-2 border-blue-800 mx-1 text-blue-600">+ Add Widget</span>
+          <span className="py-1 px-1 bg-white rounded-lg border-2 border-blue-800 mx-1 text-blue-600 cursor-pointer">+ Add Widget</span>
         </button>
 
         <div className={`fixed inset-y-0 right-0 w-72 transition-transform duration-500 ease-in-out transform ${
